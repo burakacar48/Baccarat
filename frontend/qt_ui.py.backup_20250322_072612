@@ -42,14 +42,134 @@ class BaccaratWorker(QThread):
         self.operation = None
         self.operation_args = None
     
-    
     def set_components(self, prediction_engine, db_manager, performance_tracker=None):
+        """Sistem bileşenlerini ayarlar"""
         self.prediction_engine = prediction_engine
-        # Her thread için yeni bir veritabanı bağlantısı oluştur
-        self.db_manager = type(db_manager)(db_manager.db_uri)
-        self.db_manager.connect()
+        self.db_manager = db_manager
         self.performance_tracker = performance_tracker
+    
+    def run(self):
+        """Thread başladığında çalışacak metod"""
+        if self.operation == "predict":
+            try:
+                self.progress_update.emit(10, "Veriler hazırlanıyor...")
+                prediction = self.prediction_engine.predict(save_prediction=False)
+                self.progress_update.emit(100, "Tahmin tamamlandı!")
+                self.prediction_ready.emit(prediction)
+                self.operation_complete.emit(True, "Tahmin başarıyla hesaplandı.")
+            except Exception as e:
+                self.operation_complete.emit(False, f"Tahmin hatası: {str(e)}")
+        
+        elif self.operation == "save_result":
+            try:
+                result = self.operation_args.get("result")
+                self.progress_update.emit(50, f"{result} sonucu kaydediliyor...")
+                result_id = self.prediction_engine.update_results(result)
+                success = result_id > 0
+                self.progress_update.emit(100, "İşlem tamamlandı!")
+                self.operation_complete.emit(success, f"Sonuç kaydedildi: {result}" if success else "Sonuç kaydedilemedi!")
+            except Exception as e:
+                self.operation_complete.emit(False, f"Sonuç kaydetme hatası: {str(e)}")
+        
+        elif self.operation == "optimize_weights":
+            try:
+                strategy = self.operation_args.get("strategy", "performance")
+                days = self.operation_args.get("days", 7)
+                
+                self.progress_update.emit(10, "Veriler analiz ediliyor...")
+                
+                if self.performance_tracker:
+                    self.progress_update.emit(40, "Ağırlıklar optimize ediliyor...")
+                    updated_weights = self.performance_tracker.optimize_weights()
+                    self.progress_update.emit(90, "Değişiklikler kaydediliyor...")
+                    
+                    # Başarılı optimizasyon
+                    self.progress_update.emit(100, "Optimizasyon tamamlandı!")
+                    self.operation_complete.emit(True, "Ağırlıklar optimize edildi.")
+                else:
+                    self.operation_complete.emit(False, "Performance tracker bulunamadı!")
+            except Exception as e:
+                self.operation_complete.emit(False, f"Ağırlık optimizasyonu hatası: {str(e)}")
+        
+        elif self.operation == "retrain":
+            try:
+                model = self.operation_args.get("model")
+                epochs = self.operation_args.get("epochs", 50)
+                batch_size = self.operation_args.get("batch_size", 32)
+                
+                if not model:
+                    self.operation_complete.emit(False, "Model bulunamadı!")
+                    return
+                
+                from backend.deep_learning.training import ModelTrainer
+                model_trainer = ModelTrainer(model, self.db_manager)
+                
+                self.progress_update.emit(10, "Eğitim verileri hazırlanıyor...")
+                
+                # Eğitim başlat
+                self.progress_update.emit(20, "Model eğitimi başlatılıyor...")
+                
+                def progress_callback(epoch, total_epochs, metrics):
+                    progress = int(20 + (epoch / total_epochs) * 70)
+                    self.progress_update.emit(progress, f"Epoch {epoch}/{total_epochs}: Doğruluk={metrics.get('accuracy', 0):.4f}")
+                
+                # Model eğitimi
+                history = model_trainer.train_model(
+                    epochs=epochs,
+                    batch_size=batch_size,
+                    force=True,
+                    progress_callback=progress_callback
+                )
+                
+                if history:
+                    self.progress_update.emit(100, "Model eğitimi tamamlandı!")
+                    self.operation_complete.emit(True, "Model başarıyla eğitildi.")
+                else:
+                    self.operation_complete.emit(False, "Model eğitimi başarısız oldu!")
+            except Exception as e:
+                self.operation_complete.emit(False, f"Model eğitim hatası: {str(e)}")
+        
+        elif self.operation == "bulk_results":
+            try:
+                results = self.operation_args.get("results", "")
+                self.progress_update.emit(10, "Toplu sonuçlar hazırlanıyor...")
+                
+                valid_results = []
+                for char in results:
+                    if char in ['P', 'B', 'T']:
+                        valid_results.append(char)
+                
+                total = len(valid_results)
+                successful = 0
+                
+                for i, result in enumerate(valid_results):
+                    progress = 10 + int((i / total) * 80)
+                    self.progress_update.emit(progress, f"Sonuç kaydediliyor: {result} ({i+1}/{total})")
+                    
+                    result_id = self.prediction_engine.update_results(result)
+                    if result_id > 0:
+                        successful += 1
+                
+                self.progress_update.emit(100, "Toplu sonuç girişi tamamlandı!")
+                self.operation_complete.emit(True, f"Toplam {total} sonuçtan {successful} tanesi başarıyla kaydedildi.")
+            except Exception as e:
+                self.operation_complete.emit(False, f"Toplu sonuç hatası: {str(e)}")
 
+
+class BaccaratAnalysisApp(QMainWindow):
+    def __init__(self, prediction_engine=None, db_manager=None, performance_tracker=None):
+        super().__init__()
+        self.setWindowTitle("Baccarat Tahmin Analiz Sistemi")
+        self.setMinimumSize(800, 600)
+        
+        # Sistem bileşenleri
+        self.prediction_engine = prediction_engine
+        self.db_manager = db_manager
+        self.performance_tracker = performance_tracker
+        
+        # Worker thread
+        self.worker = BaccaratWorker()
+        self.worker.set_components(prediction_engine, db_manager, performance_tracker)
         self.worker.prediction_ready.connect(self.update_prediction_results)
         self.worker.operation_complete.connect(self.handle_operation_complete)
         self.worker.progress_update.connect(self.update_progress)

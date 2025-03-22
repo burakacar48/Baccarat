@@ -700,3 +700,623 @@
 2025-03-22 07:19:24 [INFO] backend.engine.prediction_engine: Sonuç kaydedildi: ID=-1, Sonuç=P
 2025-03-22 07:19:27 [ERROR] backend.database.db_manager: Oyun sonucu kaydetme hatası: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 4136 and this is thread id 11888.
 2025-03-22 07:19:27 [INFO] backend.engine.prediction_engine: Sonuç kaydedildi: ID=-1, Sonuç=B
+2025-03-22 07:22:14 [DEBUG] root: Debug modu etkin
+2025-03-22 07:22:14 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:22:14 [DEBUG] backend.database.db_manager: Veritabanı tabloları oluşturuldu
+2025-03-22 07:22:14 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\baccarat\data\baccarat.db
+2025-03-22 07:22:14 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:22:14 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:22:14 [INFO] backend.engine.weight_optimizer: Ağırlık optimizasyonu modülü başlatıldı
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.sequence: Sıralı Desen Analizi başlatıldı: Max seri uzunluğu=5
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Sequence Analysis
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.bayes: Bayes Model başlatıldı
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Bayes Model
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.markov: Markov Zinciri Modeli başlatıldı: Order=2
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Markov Chain
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.cyclical: Dönemsel Analiz başlatıldı: Döngü uzunlukları=[5, 7, 9, 11]
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.correlation: Korelasyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Correlation Model
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.monte_carlo: Monte Carlo Simülasyon Modeli başlatıldı: Simülasyon sayısı=1000
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.clustering: Kümeleme Modeli başlatıldı: Küme sayısı=3, Pencere boyutu=50
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Clustering Model
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.entropy: Entropi Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Entropy Model
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Regression Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.regression: Regresyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Regression Model
+2025-03-22 07:22:14 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Combination Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Kombinasyon Analizi başlatıldı: 0 alt algoritma
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Regression Model, Ağırlık: 1.0
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Combination Analysis
+2025-03-22 07:22:14 [INFO] __main__: Toplam 12 algoritma kaydedildi
+2025-03-22 07:22:14 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:22:14 [INFO] backend.deep_learning.model_registry: Model kayıt modülü başlatıldı: C:\Users\Burak\Desktop\v11\baccarat\models
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: Model: "sequential"
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:  Layer (type)                Output Shape              Param #   
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:  dense (Dense)               (None, 3)                 195       
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: Total params: 50115 (195.76 KB)
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: Trainable params: 50115 (195.76 KB)
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: Non-trainable params: 0 (0.00 Byte)
+2025-03-22 07:22:14 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:22:14 [INFO] backend.deep_learning.lstm_model: LSTM modeli başarıyla oluşturuldu
+2025-03-22 07:22:14 [INFO] __main__: Yeni LSTM modeli oluşturuldu
+2025-03-22 07:22:14 [INFO] backend.engine.prediction_engine: Derin öğrenme modeli ayarlandı
+2025-03-22 07:22:15 [DEBUG] backend.database.db_manager: Son 0 sonuç getirildi
+2025-03-22 07:22:15 [INFO] __main__: Sistem başlatma tamamlandı.
+2025-03-22 07:22:15 [INFO] __main__: PyQt5 grafik arayüzü başlatılıyor...
+2025-03-22 07:22:15 [DEBUG] backend.database.db_manager: Toplam 0 sonuç getirildi
+2025-03-22 07:22:15 [DEBUG] backend.database.db_manager: Son 0 sonuç getirildi
+2025-03-22 07:22:15 [DEBUG] backend.database.db_manager: Toplam 0 sonuç getirildi
+2025-03-22 07:22:15 [ERROR] backend.database.db_manager: Sonuç getirme hatası: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 11028 and this is thread id 6420.
+2025-03-22 07:22:15 [WARNING] backend.engine.prediction_engine: Veritabanında sonuç bulunamadı. Tahmin yapılamıyor.
+2025-03-22 07:22:23 [ERROR] backend.database.db_manager: Oyun sonucu kaydetme hatası: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 11028 and this is thread id 12028.
+2025-03-22 07:22:23 [INFO] backend.engine.prediction_engine: Sonuç kaydedildi: ID=-1, Sonuç=B
+2025-03-22 07:22:25 [ERROR] backend.database.db_manager: Oyun sonucu kaydetme hatası: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 11028 and this is thread id 1076.
+2025-03-22 07:22:25 [INFO] backend.engine.prediction_engine: Sonuç kaydedildi: ID=-1, Sonuç=P
+2025-03-22 07:26:45 [DEBUG] root: Debug modu etkin
+2025-03-22 07:26:45 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:26:45 [DEBUG] backend.database.db_manager: Veritabanı tabloları oluşturuldu
+2025-03-22 07:26:45 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:26:45 [ERROR] __main__: Program hata ile sonlandı: 'DatabaseManager' object has no attribute '_local'
+Traceback (most recent call last):
+  File "C:\Users\Burak\Desktop\v11\main.py", line 370, in <module>
+    main()
+  File "C:\Users\Burak\Desktop\v11\main.py", line 314, in main
+    db_manager, prediction_engine, performance_tracker, weight_optimizer = initialize_system()
+  File "C:\Users\Burak\Desktop\v11\main.py", line 72, in initialize_system
+    db_manager.seed_initial_data()
+  File "C:\Users\Burak\Desktop\v11\backend\database\db_manager.py", line 71, in seed_initial_data
+    connection = self._get_connection()
+  File "C:\Users\Burak\Desktop\v11\backend\database\db_manager.py", line 9, in _get_connection
+    if not hasattr(self._local, 'connection'):
+AttributeError: 'DatabaseManager' object has no attribute '_local'
+2025-03-22 07:28:56 [DEBUG] root: Debug modu etkin
+2025-03-22 07:28:56 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:28:56 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:28:56 [INFO] backend.database.db_manager: 5 adet başlangıç verisi eklendi
+2025-03-22 07:28:56 [INFO] backend.database.db_manager: Veritabanında zaten 5 adet kayıt mevcut
+2025-03-22 07:28:56 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:28:56 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:28:56 [INFO] backend.engine.weight_optimizer: Ağırlık optimizasyonu modülü başlatıldı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.sequence: Sıralı Desen Analizi başlatıldı: Max seri uzunluğu=5
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Sequence Analysis
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.bayes: Bayes Model başlatıldı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Bayes Model
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.markov: Markov Zinciri Modeli başlatıldı: Order=2
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Markov Chain
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.cyclical: Dönemsel Analiz başlatıldı: Döngü uzunlukları=[5, 7, 9, 11]
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.correlation: Korelasyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Correlation Model
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.monte_carlo: Monte Carlo Simülasyon Modeli başlatıldı: Simülasyon sayısı=1000
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.clustering: Kümeleme Modeli başlatıldı: Küme sayısı=3, Pencere boyutu=50
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Clustering Model
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.entropy: Entropi Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Entropy Model
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Regression Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.regression: Regresyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Regression Model
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Combination Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Kombinasyon Analizi başlatıldı: 0 alt algoritma
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Regression Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Combination Analysis
+2025-03-22 07:28:56 [INFO] __main__: Toplam 12 algoritma kaydedildi
+2025-03-22 07:28:56 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:28:56 [INFO] backend.deep_learning.model_registry: Model kayıt modülü başlatıldı: C:\Users\Burak\Desktop\v11\models
+2025-03-22 07:28:56 [ERROR] __main__: LSTM modeli başlatma hatası: 'DatabaseManager' object has no attribute 'get_active_model'
+2025-03-22 07:28:56 [INFO] __main__: LSTM modeli başlatılamadı, sistem LSTM olmadan devam edecek
+2025-03-22 07:28:56 [INFO] __main__: Sistem başlatma tamamlandı.
+2025-03-22 07:28:56 [INFO] __main__: Konsol kullanıcı arayüzü başlatılıyor...
+2025-03-22 07:28:56 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:28:56 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:28:56 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:28:56 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:28:56 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:28:56 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: Model: "sequential"
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:  Layer (type)                Output Shape              Param #   
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:  dense (Dense)               (None, 3)                 195       
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: Total params: 50115 (195.76 KB)
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: Trainable params: 50115 (195.76 KB)
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: Non-trainable params: 0 (0.00 Byte)
+2025-03-22 07:28:56 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:28:56 [INFO] backend.deep_learning.lstm_model: LSTM modeli başarıyla oluşturuldu
+2025-03-22 07:28:56 [INFO] backend.engine.prediction_engine: Derin öğrenme modeli ayarlandı
+2025-03-22 07:29:20 [DEBUG] root: Debug modu etkin
+2025-03-22 07:29:20 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:29:20 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:29:20 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:29:20 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:29:20 [INFO] backend.engine.weight_optimizer: Ağırlık optimizasyonu modülü başlatıldı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.sequence: Sıralı Desen Analizi başlatıldı: Max seri uzunluğu=5
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Sequence Analysis
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.bayes: Bayes Model başlatıldı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Bayes Model
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.markov: Markov Zinciri Modeli başlatıldı: Order=2
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Markov Chain
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.cyclical: Dönemsel Analiz başlatıldı: Döngü uzunlukları=[5, 7, 9, 11]
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.correlation: Korelasyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Correlation Model
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.monte_carlo: Monte Carlo Simülasyon Modeli başlatıldı: Simülasyon sayısı=1000
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.clustering: Kümeleme Modeli başlatıldı: Küme sayısı=3, Pencere boyutu=50
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Clustering Model
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.entropy: Entropi Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Entropy Model
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Regression Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.regression: Regresyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Regression Model
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Combination Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Kombinasyon Analizi başlatıldı: 0 alt algoritma
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Regression Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Combination Analysis
+2025-03-22 07:29:20 [INFO] __main__: Toplam 12 algoritma kaydedildi
+2025-03-22 07:29:20 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:29:20 [INFO] backend.deep_learning.model_registry: Model kayıt modülü başlatıldı: C:\Users\Burak\Desktop\v11\models
+2025-03-22 07:29:20 [ERROR] __main__: LSTM modeli başlatma hatası: 'DatabaseManager' object has no attribute 'get_active_model'
+2025-03-22 07:29:20 [INFO] __main__: LSTM modeli başlatılamadı, sistem LSTM olmadan devam edecek
+2025-03-22 07:29:20 [INFO] __main__: Sistem başlatma tamamlandı.
+2025-03-22 07:29:20 [INFO] __main__: Konsol kullanıcı arayüzü başlatılıyor...
+2025-03-22 07:29:20 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:29:20 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:29:20 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:29:20 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:29:20 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:29:20 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:29:20 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: Model: "sequential"
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:  Layer (type)                Output Shape              Param #   
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:  dense (Dense)               (None, 3)                 195       
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: Total params: 50115 (195.76 KB)
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: Trainable params: 50115 (195.76 KB)
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: Non-trainable params: 0 (0.00 Byte)
+2025-03-22 07:29:21 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:29:21 [INFO] backend.deep_learning.lstm_model: LSTM modeli başarıyla oluşturuldu
+2025-03-22 07:29:21 [INFO] backend.engine.prediction_engine: Derin öğrenme modeli ayarlandı
+2025-03-22 07:30:32 [DEBUG] root: Debug modu etkin
+2025-03-22 07:30:32 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:30:32 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:30:32 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:30:32 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:30:32 [INFO] backend.engine.weight_optimizer: Ağırlık optimizasyonu modülü başlatıldı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.sequence: Sıralı Desen Analizi başlatıldı: Max seri uzunluğu=5
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Sequence Analysis
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.bayes: Bayes Model başlatıldı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Bayes Model
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.markov: Markov Zinciri Modeli başlatıldı: Order=2
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Markov Chain
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.cyclical: Dönemsel Analiz başlatıldı: Döngü uzunlukları=[5, 7, 9, 11]
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.correlation: Korelasyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Correlation Model
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.monte_carlo: Monte Carlo Simülasyon Modeli başlatıldı: Simülasyon sayısı=1000
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.clustering: Kümeleme Modeli başlatıldı: Küme sayısı=3, Pencere boyutu=50
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Clustering Model
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.entropy: Entropi Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Entropy Model
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Regression Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.regression: Regresyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Regression Model
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Combination Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Kombinasyon Analizi başlatıldı: 0 alt algoritma
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Regression Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Combination Analysis
+2025-03-22 07:30:32 [INFO] __main__: Toplam 12 algoritma kaydedildi
+2025-03-22 07:30:32 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:30:32 [INFO] backend.deep_learning.model_registry: Model kayıt modülü başlatıldı: C:\Users\Burak\Desktop\v11\models
+2025-03-22 07:30:32 [ERROR] __main__: LSTM modeli başlatma hatası: 'DatabaseManager' object has no attribute 'get_active_model'
+2025-03-22 07:30:32 [INFO] __main__: LSTM modeli başlatılamadı, sistem LSTM olmadan devam edecek
+2025-03-22 07:30:32 [INFO] __main__: Sistem başlatma tamamlandı.
+2025-03-22 07:30:32 [INFO] __main__: Konsol kullanıcı arayüzü başlatılıyor...
+2025-03-22 07:30:32 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:30:32 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:30:32 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:30:32 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:30:32 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:30:32 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:30:32 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: Model: "sequential"
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:  Layer (type)                Output Shape              Param #   
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:  dense (Dense)               (None, 3)                 195       
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: Total params: 50115 (195.76 KB)
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: Trainable params: 50115 (195.76 KB)
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: Non-trainable params: 0 (0.00 Byte)
+2025-03-22 07:30:33 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:30:33 [INFO] backend.deep_learning.lstm_model: LSTM modeli başarıyla oluşturuldu
+2025-03-22 07:30:33 [INFO] backend.engine.prediction_engine: Derin öğrenme modeli ayarlandı
+2025-03-22 07:35:54 [DEBUG] root: Debug modu etkin
+2025-03-22 07:35:54 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:35:54 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:35:54 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:35:54 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:35:54 [INFO] backend.engine.weight_optimizer: Ağırlık optimizasyonu modülü başlatıldı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.sequence: Sıralı Desen Analizi başlatıldı: Max seri uzunluğu=5
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Sequence Analysis
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.bayes: Bayes Model başlatıldı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Bayes Model
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.markov: Markov Zinciri Modeli başlatıldı: Order=2
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Markov Chain
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.cyclical: Dönemsel Analiz başlatıldı: Döngü uzunlukları=[5, 7, 9, 11]
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.correlation: Korelasyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Correlation Model
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.monte_carlo: Monte Carlo Simülasyon Modeli başlatıldı: Simülasyon sayısı=1000
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.clustering: Kümeleme Modeli başlatıldı: Küme sayısı=3, Pencere boyutu=50
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Clustering Model
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.entropy: Entropi Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Entropy Model
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Regression Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.regression: Regresyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Regression Model
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Combination Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Kombinasyon Analizi başlatıldı: 0 alt algoritma
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Regression Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Combination Analysis
+2025-03-22 07:35:54 [INFO] __main__: Toplam 12 algoritma kaydedildi
+2025-03-22 07:35:54 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:35:54 [INFO] backend.deep_learning.model_registry: Model kayıt modülü başlatıldı: C:\Users\Burak\Desktop\v11\models
+2025-03-22 07:35:54 [ERROR] __main__: LSTM modeli başlatma hatası: 'DatabaseManager' object has no attribute 'get_active_model'
+2025-03-22 07:35:54 [INFO] __main__: LSTM modeli başlatılamadı, sistem LSTM olmadan devam edecek
+2025-03-22 07:35:54 [INFO] __main__: Sistem başlatma tamamlandı.
+2025-03-22 07:35:54 [INFO] __main__: Konsol kullanıcı arayüzü başlatılıyor...
+2025-03-22 07:35:54 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:35:54 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:35:54 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:35:54 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:35:54 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:35:54 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:35:54 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: Model: "sequential"
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:  Layer (type)                Output Shape              Param #   
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:  dense (Dense)               (None, 3)                 195       
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: Total params: 50115 (195.76 KB)
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: Trainable params: 50115 (195.76 KB)
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: Non-trainable params: 0 (0.00 Byte)
+2025-03-22 07:35:55 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:35:55 [INFO] backend.deep_learning.lstm_model: LSTM modeli başarıyla oluşturuldu
+2025-03-22 07:35:55 [INFO] backend.engine.prediction_engine: Derin öğrenme modeli ayarlandı
+2025-03-22 07:35:55 [INFO] backend.database.db_manager: Son 1000 sonuç alındı: ['B', 'P', 'T', 'B', 'P']
+2025-03-22 07:44:46 [DEBUG] root: Debug modu etkin
+2025-03-22 07:44:46 [INFO] __main__: Baccarat Tahmin Sistemi başlatılıyor...
+2025-03-22 07:44:46 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:44:46 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:44:46 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:44:46 [INFO] backend.engine.weight_optimizer: Ağırlık optimizasyonu modülü başlatıldı
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.sequence: Sıralı Desen Analizi başlatıldı: Max seri uzunluğu=5
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Sequence Analysis
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.bayes: Bayes Model başlatıldı
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Bayes Model
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.markov: Markov Zinciri Modeli başlatıldı: Order=2
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Markov Chain
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.cyclical: Dönemsel Analiz başlatıldı: Döngü uzunlukları=[5, 7, 9, 11]
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.correlation: Korelasyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Correlation Model
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:44:46 [INFO] backend.algorithms.monte_carlo: Monte Carlo Simülasyon Modeli başlatıldı: Simülasyon sayısı=1000
+2025-03-22 07:44:46 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 07:44:46 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.clustering: Kümeleme Modeli başlatıldı: Küme sayısı=3, Pencere boyutu=50
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Clustering Model
+2025-03-22 07:44:47 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.entropy: Entropi Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Entropy Model
+2025-03-22 07:44:47 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Regression Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.regression: Regresyon Modeli başlatıldı: Pencere boyutu=50
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Regression Model
+2025-03-22 07:44:47 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Combination Analysis, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Kombinasyon Analizi başlatıldı: 0 alt algoritma
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Sequence Analysis, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Bayes Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Markov Chain, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Cyclical Analysis, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Correlation Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Monte Carlo Simulation, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Clustering Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Entropy Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.combination: Alt algoritma eklendi: Regression Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Combination Analysis
+2025-03-22 07:44:47 [INFO] __main__: Toplam 12 algoritma kaydedildi
+2025-03-22 07:44:47 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:44:47 [INFO] backend.deep_learning.model_registry: Model kayıt modülü başlatıldı: C:\Users\Burak\Desktop\v11\models
+2025-03-22 07:44:47 [ERROR] __main__: LSTM modeli başlatma hatası: 'DatabaseManager' object has no attribute 'get_active_model'
+2025-03-22 07:44:47 [INFO] __main__: LSTM modeli başlatılamadı, sistem LSTM olmadan devam edecek
+2025-03-22 07:44:47 [INFO] __main__: Sistem başlatma tamamlandı.
+2025-03-22 07:44:47 [INFO] __main__: Konsol kullanıcı arayüzü başlatılıyor...
+2025-03-22 07:44:47 [INFO] backend.database.db_manager: Veritabanı bağlantısı kuruldu: C:\Users\Burak\Desktop\v11\data\baccarat.db
+2025-03-22 07:44:47 [INFO] backend.engine.result_aggregator: Sonuç birleştirici başlatıldı: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 07:44:47 [INFO] backend.engine.performance_tracker: Performans izleyici başlatıldı
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Tahmin motoru başlatıldı
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Sonuç birleştirici ayarlandı
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Veritabanı yöneticisi ayarlandı
+2025-03-22 07:44:47 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Pattern Analysis, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Pattern Analysis
+2025-03-22 07:44:47 [INFO] backend.algorithms.base: Algoritma Başlatıldı: Statistical Model, Ağırlık: 1.0
+2025-03-22 07:44:47 [INFO] backend.algorithms.statistical: İstatistiksel Model başlatıldı: Pencere boyutu=50
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Algoritma kaydedildi: Statistical Model
+2025-03-22 07:44:47 [INFO] backend.deep_learning.lstm_model: LSTM modeli başlatıldı: Giriş=10, Gizli=64, Katman=2, Çıkış=3
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: Model: "sequential"
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:  Layer (type)                Output Shape              Param #   
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:  dense (Dense)               (None, 3)                 195       
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model:                                                                  
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: =================================================================
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: Total params: 50115 (195.76 KB)
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: Trainable params: 50115 (195.76 KB)
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: Non-trainable params: 0 (0.00 Byte)
+2025-03-22 07:44:47 [DEBUG] backend.deep_learning.lstm_model: _________________________________________________________________
+2025-03-22 07:44:47 [INFO] backend.deep_learning.lstm_model: LSTM modeli başarıyla oluşturuldu
+2025-03-22 07:44:47 [INFO] backend.engine.prediction_engine: Derin öğrenme modeli ayarlandı
+2025-03-22 07:44:47 [INFO] backend.database.db_manager: Son 1000 sonuç alındı: ['B', 'P', 'T', 'B', 'P']
+2025-03-22 07:44:47 [ERROR] backend.database.db_manager: Oturum oluşturma hatası: NOT NULL constraint failed: sessions.start_time
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
+2025-03-22 07:45:16 [ERROR] backend.engine.prediction_engine: Sonuç güncelleme hatası: save_result() got an unexpected keyword argument 'timestamp'
