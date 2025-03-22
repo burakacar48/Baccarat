@@ -45,6 +45,15 @@ from backend.deep_learning.lstm_model import LSTMModel
 from backend.deep_learning.training import ModelTrainer
 from backend.deep_learning.model_registry import ModelRegistry
 
+# Kullanıcı arayüzlerini import et
+try:
+    from PyQt5.QtWidgets import QApplication
+    from frontend.qt_ui import BaccaratAnalysisApp
+    HAS_QT = True
+except ImportError:
+    HAS_QT = False
+    print("PyQt5 bulunamadı. Konsol arayüzü kullanılacak.")
+
 # Konsol arayüzünü import et
 from frontend.simple_ui import BaccaratConsoleUI
 
@@ -289,6 +298,7 @@ def main():
     parser.add_argument('--optimize', action='store_true', help='Algoritma ağırlıklarını optimize et')
     parser.add_argument('--api', action='store_true', help='API sunucusunu başlat')
     parser.add_argument('--no-ui', action='store_true', help='Kullanıcı arayüzünü başlatma')
+    parser.add_argument('--console', action='store_true', help='Konsol arayüzünü kullan')
     args = parser.parse_args()
     
     # Veritabanını sıfırla
@@ -326,14 +336,23 @@ def main():
             logger.error("API sunucusu başlatılamadı. 'uvicorn' ve 'fastapi' paketlerini yükleyin.")
             logger.info("pip install uvicorn fastapi")
     
-    # Kullanıcı arayüzünü başlat (console UI)
+    # Kullanıcı arayüzünü başlat
     if not args.no_ui:
-        logger.info("Konsol kullanıcı arayüzü başlatılıyor...")
-        ui = BaccaratConsoleUI()
-        ui.db_manager = db_manager
-        ui.prediction_engine = prediction_engine
-        ui.performance_tracker = performance_tracker
-        ui.run()
+        if args.console or not HAS_QT:
+            # Konsol arayüzünü başlat
+            logger.info("Konsol kullanıcı arayüzü başlatılıyor...")
+            ui = BaccaratConsoleUI()
+            ui.db_manager = db_manager
+            ui.prediction_engine = prediction_engine
+            ui.performance_tracker = performance_tracker
+            ui.run()
+        else:
+            # PyQt5 arayüzünü başlat
+            logger.info("PyQt5 grafik arayüzü başlatılıyor...")
+            app = QApplication(sys.argv)
+            window = BaccaratAnalysisApp(prediction_engine, db_manager, performance_tracker)
+            window.show()
+            sys.exit(app.exec_())
     else:
         logger.info("Baccarat Tahmin Sistemi çalışmaya hazır.")
         logger.info("UI olmadan çalışıyor. Çıkmak için Ctrl+C tuşlarına basın.")
