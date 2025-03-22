@@ -1,0 +1,73 @@
+2025-03-22 06:15:12 [INFO] Baccarat Tahmin Sistemi baþlatýlýyor...
+2025-03-22 06:15:12 [DEBUG] Veritabaný tablolarý oluþturuldu
+2025-03-22 06:15:12 [INFO] Veritabaný baðlantýsý kuruldu: C:\Users\Burak\Desktop\v11\baccarat\data\baccarat.db
+2025-03-22 06:15:12 [INFO] Sonuç birleþtirici baþlatýldý: Stratejiler=['weighted_voting', 'confidence_adjusted', 'accuracy_based']
+2025-03-22 06:15:12 [INFO] Performans izleyici baþlatýldý
+2025-03-22 06:15:12 [INFO] Tahmin motoru baþlatýldý
+2025-03-22 06:15:12 [INFO] Sonuç birleþtirici ayarlandý
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Pattern Analysis, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Statistical Model, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Ýstatistiksel Model baþlatýldý: Pencere boyutu=50
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Sequence Analysis, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Sýralý Desen Analizi baþlatýldý: Max seri uzunluðu=5
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Bayes Model, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Bayes Model baþlatýldý
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Combination Analysis, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Kombinasyon Analizi baþlatýldý: 0 alt algoritma
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Markov Chain, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Markov Zinciri Modeli baþlatýldý: Order=2
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Cyclical Analysis, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Dönemsel Analiz baþlatýldý: Döngü uzunluklarý=[5, 7, 9, 11]
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Correlation Model, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Korelasyon Modeli baþlatýldý: Pencere boyutu=50
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Monte Carlo Simulation, Aðýrlýk: 1.0
+2025-03-22 06:15:12 [INFO] Monte Carlo Simülasyon Modeli baþlatýldý: Simülasyon sayýsý=1000
+2025-03-22 06:15:12 [INFO] Algoritma Baþlatýldý: Clustering Model, Aðýrlýk: 1.0
+2025-03-22 06:15:13 [INFO] Kümeleme Modeli baþlatýldý: Küme sayýsý=3, Pencere boyutu=50
+2025-03-22 06:15:13 [INFO] Algoritma Baþlatýldý: Time Series Model, Aðýrlýk: 1.0
+2025-03-22 06:15:13 [WARNING] TimeSeriesModel: statsmodels kütüphanesi bulunamadý, basit zaman serisi analizi kullanýlacak
+2025-03-22 06:15:13 [INFO] Zaman Serisi Modeli baþlatýldý: Pencere boyutu=10
+2025-03-22 06:15:13 [INFO] Algoritma Baþlatýldý: Entropy Model, Aðýrlýk: 1.0
+2025-03-22 06:15:13 [INFO] Entropi Modeli baþlatýldý: Pencere boyutu=50
+2025-03-22 06:15:13 [INFO] Algoritma Baþlatýldý: Regression Model, Aðýrlýk: 1.0
+2025-03-22 06:15:13 [INFO] Regresyon Modeli baþlatýldý: Pencere boyutu=50
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Pattern Analysis
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Statistical Model
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Sequence Analysis
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Bayes Model
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Combination Analysis
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Markov Chain
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Cyclical Analysis
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Correlation Model
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Monte Carlo Simulation
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Clustering Model
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Time Series Model
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Entropy Model
+2025-03-22 06:15:13 [INFO] Algoritma kaydedildi: Regression Model
+2025-03-22 06:15:13 [INFO] LSTM modeli baþlatýldý: Giriþ=10, Gizli=64, Katman=2, Çýkýþ=3
+2025-03-22 06:15:13 [INFO] Önceden eðitilmiþ LSTM modeli bulunamadý, yeni model oluþturuldu.
+2025-03-22 06:15:13 [DEBUG] Model: "sequential"
+2025-03-22 06:15:13 [DEBUG] _________________________________________________________________
+2025-03-22 06:15:13 [DEBUG]  Layer (type)                Output Shape              Param #   
+2025-03-22 06:15:13 [DEBUG] =================================================================
+2025-03-22 06:15:13 [DEBUG]  lstm (LSTM)                 (None, 10, 64)            16896     
+2025-03-22 06:15:13 [DEBUG]                                                                  
+2025-03-22 06:15:13 [DEBUG]  dropout (Dropout)           (None, 10, 64)            0         
+2025-03-22 06:15:13 [DEBUG]                                                                  
+2025-03-22 06:15:13 [DEBUG]  lstm_1 (LSTM)               (None, 64)                33024     
+2025-03-22 06:15:13 [DEBUG]                                                                  
+2025-03-22 06:15:13 [DEBUG]  dropout_1 (Dropout)         (None, 64)                0         
+2025-03-22 06:15:13 [DEBUG]                                                                  
+2025-03-22 06:15:13 [DEBUG]  dense (Dense)               (None, 3)                 195       
+2025-03-22 06:15:13 [DEBUG]                                                                  
+2025-03-22 06:15:13 [DEBUG] =================================================================
+2025-03-22 06:15:13 [DEBUG] Total params: 50115 (195.76 KB)
+2025-03-22 06:15:13 [DEBUG] Trainable params: 50115 (195.76 KB)
+2025-03-22 06:15:13 [DEBUG] Non-trainable params: 0 (0.00 Byte)
+2025-03-22 06:15:13 [DEBUG] _________________________________________________________________
+2025-03-22 06:15:13 [INFO] LSTM modeli baþarýyla oluþturuldu
+2025-03-22 06:15:13 [INFO] Derin öðrenme modeli ayarlandý
+2025-03-22 06:15:13 [DEBUG] Son 0 sonuç getirildi
+2025-03-22 06:15:13 [INFO] Sistem baþlatma tamamlandý.
+2025-03-22 06:15:13 [INFO] Baccarat Tahmin Sistemi çalýþmaya hazýr.
+2025-03-22 06:15:13 [INFO] Program sonlandý.
